@@ -53,3 +53,6 @@ c:\users\ian\documents\visual studio 2013\Projects\Lab5\Lab5\bin\Microsoft.Owin.
 c:\users\ian\documents\visual studio 2013\Projects\Lab5\Lab5\obj\Debug\Lab5.csprojResolveAssemblyReference.cache
 c:\users\ian\documents\visual studio 2013\Projects\Lab5\Lab5\obj\Debug\Lab5.dll
 c:\users\ian\documents\visual studio 2013\Projects\Lab5\Lab5\obj\Debug\Lab5.pdb
+C:\aaa\vat\c#\lab05\Lab5\Lab5\obj\Debug\Lab5.csprojResolveAssemblyReference.cache
+C:\aaa\vat\c#\lab05\Lab5\Lab5\obj\Debug\Lab5.dll
+C:\aaa\vat\c#\lab05\Lab5\Lab5\obj\Debug\Lab5.pdb
