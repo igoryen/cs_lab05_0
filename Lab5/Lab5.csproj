@@ -173,6 +173,13 @@
     <Compile Include="Models\Initiallizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\RepoDirector.cs" />
+    <Compile Include="ViewModels\RepoGenre.cs" />
+    <Compile Include="ViewModels\RepoMovie.cs" />
+    <Compile Include="ViewModels\RepositoryBase.cs" />
+    <Compile Include="ViewModels\VM_Director.cs" />
+    <Compile Include="ViewModels\VM_Genre.cs" />
+    <Compile Include="ViewModels\VM_Movie.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
