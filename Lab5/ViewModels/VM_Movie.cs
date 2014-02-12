@@ -28,12 +28,12 @@ namespace Lab5.ViewModels {
     [Required]
     [StringLength(40, MinimumLength = 3)]
     [Display(Name = "Ticket Price")]
-    public string TicketPrice { get; set; }
+    public decimal TicketPrice { get; set; }
 
     [Required]
     [StringLength(100, MinimumLength = 3)]
     [Display(Name = "Name")]
-    public string Director { get; set; }
+    public Director Director { get; set; }
 
     public List<GenresForList> Genres { get; set; }
   }

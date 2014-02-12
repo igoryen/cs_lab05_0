@@ -5,9 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace Lab5.Models {
-
   public class Movie {
-
     public Movie() {
       this.Genres = new List<Genre>();
     }
@@ -24,7 +22,6 @@ namespace Lab5.Models {
   }
 
   public class Director {
-
     public Director() {
       this.Name = string.Empty;
       this.Movies = new List<Movie>();
@@ -40,7 +37,6 @@ namespace Lab5.Models {
     public List<Movie> Movies { get; set; }
   }
   public class Genre {
-
     public Genre() {
       this.Name = string.Empty;
       this.Movies = new List<Movie>();
