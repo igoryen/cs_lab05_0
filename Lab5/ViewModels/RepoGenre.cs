@@ -8,3 +8,8 @@ namespace Lab5.ViewModels {
   public class RepoGenre {
   }
 }
+
+//getForList()
+//getGenresFull()
+//getGenreFull()
+//Genres
