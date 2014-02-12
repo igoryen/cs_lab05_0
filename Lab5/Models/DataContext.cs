@@ -12,5 +12,7 @@ namespace Lab5.Models {
     public System.Data.Entity.DbSet<Lab5.ViewModels.MovieFull> MovieFulls { get; set; }
 
     public System.Data.Entity.DbSet<Lab5.ViewModels.DirectorFull> DirectorFulls { get; set; }
+
+    public System.Data.Entity.DbSet<Lab5.ViewModels.GenreFull> GenreFulls { get; set; }
   }
 }
