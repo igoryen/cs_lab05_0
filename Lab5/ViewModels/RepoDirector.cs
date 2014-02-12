@@ -27,7 +27,7 @@ namespace Lab5.ViewModels {
 
 
     public DirectorFull getDirectorFull(int? id) {
-      var st = dc.Directors.FirstOrDefault(n => n.Id == id);
+      var dir = dc.Directors.FirstOrDefault(n => n.Id == id);
       //var dir = Directors.FirstOrDefault(n => n.Id == id);
 
       DirectorFull df = new DirectorFull();

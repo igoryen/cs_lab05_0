@@ -20,7 +20,7 @@ namespace Lab5.ViewModels {
       foreach (var item in ls) {
         MoviesForList mfl = new MoviesForList();
         mfl.Id = item.Id;
-        mfl.Name = item.Name;
+        mfl.Title = item.Title;
         rls.Add(mfl);
       }
 
@@ -53,10 +53,10 @@ namespace Lab5.ViewModels {
         MovieFull row = new MovieFull();
 
         row.Id = item.Id;
-        row.Name = item.Name;
+        row.Title = item.Title;
         row.TicketPrice = item.TicketPrice;
         row.Director = item.Director;
-        row.Movies = RepoGenre.getGenresForList(item.Genres);
+        row.Genres = RepoGenre.getGenresForList(item.Genres);
 
         rls.Add(row);  // 85
       }
@@ -98,17 +98,17 @@ namespace Lab5.ViewModels {
         ls.Add(Convert.ToInt32(item));
       }
 
-      //iterate through ls and for each id in the list, add a Course to the student's Courses collection
+      //iterate through ls and for each id in the list, add a Genre to the movie's Genres collection
       foreach (var item in ls) {
         m.Genres.Add(dc.Genres.FirstOrDefault(n => n.Id == item));
       }
-      //add the student to the DataContext
-      dc.Students.Add(m);
+      //add the movie to the DataContext
+      dc.Movies.Add(m);
 
       //savechanges is the equivalent to a database commit statement
       dc.SaveChanges();
 
-      //return a copy of the new Student as a StudentFull
+      //return a copy of the new Movie as a MovieFull
       return getMovieFull(m.Id);
     }
 
