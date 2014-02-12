@@ -26,7 +26,7 @@ namespace Lab5.ViewModels {
     }
 
     [Required]
-    [StringLength(40, MinimumLength = 3)]
+    //[StringLength(40, MinimumLength = 3)]
     [Display(Name = "Ticket Price")]
     public decimal TicketPrice { get; set; }
 
