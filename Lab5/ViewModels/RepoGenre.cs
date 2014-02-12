@@ -58,7 +58,18 @@ namespace Lab5.ViewModels {
       return rls; // 90
     }
 
+    public static List<GenresForList> getGenresForList(List<Lab5.Models.Genre> ls) {
+      List<GenresForList> nls = new List<GenresForList>();
 
+      foreach (var item in ls) {
+        GenresForList gfl = new GenresForList();
+        gfl.Id = item.Id;
+        gfl.Name = item.Name;
+        nls.Add(gfl);
+      }
+
+      return nls;
+    }
   }
 }
 
