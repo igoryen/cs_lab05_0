@@ -42,7 +42,7 @@ namespace Lab5.ViewModels {
 
     public IEnumerable<GenreFull> getGenresFull() {
 
-      var gg = dc.Genres.Include("Genres").OrderBy(n => n.Name);
+      var gg = dc.Genres.Include("Movies").OrderBy(n => n.Name);
       //var st = this.Students.OrderBy(n => n.LastName);
       List<GenreFull> rls = new List<GenreFull>();
 
