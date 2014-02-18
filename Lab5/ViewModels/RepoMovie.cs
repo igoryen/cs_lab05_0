@@ -27,7 +27,10 @@ namespace Lab5.ViewModels {
       return rls;
     }
 
-
+    //==============================================================================================
+    // getMovieFull - deliver details for the movie whose id has been passed
+    // Fetch title, ticketprice, director. These properties are in ViewModels/VM_Movie.cs/MovieFull
+    //==============================================================================================
     public MovieFull getMovieFull(int? id) {
       var m = dc.Movies.FirstOrDefault(n => n.Id == id);
       //var dir = Directors.FirstOrDefault(n => n.Id == id);
@@ -37,6 +40,7 @@ namespace Lab5.ViewModels {
       mf.Title = m.Title;
       mf.TicketPrice = m.TicketPrice;
       mf.Director = m.Director;
+      //mf.Director.Name = m.Director.Name;
       mf.Genres = RepoGenre.getGenresForList(m.Genres);
 
       return mf;
