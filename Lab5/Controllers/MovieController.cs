@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Lab5.ViewModels;
 
 namespace Lab5.Controllers {
   public class MovieController : Controller {
+
+    private RepoMovie repo = new RepoMovie();
     //
     // GET: /Movie/
     public ActionResult Index() {
-      return View();
+      return View(repo.getMoviesFull());
     }
 
     //

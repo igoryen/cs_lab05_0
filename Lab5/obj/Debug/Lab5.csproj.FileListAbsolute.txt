@@ -107,3 +107,4 @@ C:\aaa\vat\c#\lab05\Lab5\Lab5\bin\Microsoft.Owin.Security.OAuth.xml
 C:\aaa\vat\c#\lab05\Lab5\Lab5\bin\Microsoft.Owin.Security.Google.xml
 C:\aaa\vat\c#\lab05\Lab5\Lab5\bin\Microsoft.Owin.Security.Twitter.xml
 C:\aaa\vat\c#\lab05\Lab5\Lab5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\aaa\vat\c#\lab05\Lab5\Lab5\obj\Debug\Lab5.csprojResolveAssemblyReference.cache

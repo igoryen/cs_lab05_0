@@ -42,10 +42,16 @@ namespace Lab5.ViewModels {
       return mf;
 
     }
-
+    //==============================================================================================
+    // getMoviesFull() - deliver a list of all movies.
+    // Include(NP) is the Include path. It must be valid. NP = a navigation property.
+    // The NP must be declared by the EntityType "proj_name.Models.[AppDomainClasses.cs.]class_name.
+    // Here, the EntityType is 'Lab5.Models.Movie'. And the Include path's NP is "Genres",
+    // since class Movie includes 'List<Genre> Genres'
+    //==============================================================================================
     public IEnumerable<MovieFull> getMoviesFull() {
-
-      var mm = dc.Movies.Include("Movies").OrderBy(n => n.Title);
+      
+      var mm = dc.Movies.Include("Genres").OrderBy(n => n.Title);
       //var st = this.Students.OrderBy(n => n.LastName);
       List<MovieFull> rls = new List<MovieFull>();
 
